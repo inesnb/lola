@@ -1,2 +1,18 @@
-<h1>Pages#home</h1>
-<p>Find me in app/views/pages/home.html.erb</p>
+<div class="container">
+  <h1> Notre projet</h1>
+
+  <div class="">
+    <iframe src="https://www.youtube.com/embed/xe99QWlM_9A" frameborder="0" width="600 height="400"></iframe>
+  </div>
+  <hr>
+
+  Donnez nous votre email si vous êtes interessés
+
+
+  <%= simple_form_for(@client) do |f| %>
+    <%= f.input :email%>
+    <%= f.submit %>
+  <% end %>
+
+</div>
+
